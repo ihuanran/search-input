@@ -1,0 +1,115 @@
+ul.search-input-matching {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    display: none;
+    list-style: none;
+    border: 1px solid #EAEAEA;
+    border-radius: 2px;
+    background: #FFFFFF;
+    overflow-y: scroll;
+    z-index: 999999;
+}
+
+ul.search-input-matching li {
+    padding: 5px 10px;
+    line-height: 21px;
+    word-break:break-all;
+    white-space:normal;
+    text-align: left;
+}
+
+ul.search-input-matching li:hover {
+    background: #F6F6F6;
+    cursor: pointer;
+}
+
+ul.search-input-matching li.selected {
+    background: #DFDFDF;
+}
+
+ul.search-input-matching li span:first-of-type {
+    color: #2c2c2c;
+}
+
+ul.search-input-matching li span:nth-of-type(2) {
+    color: #545454;
+}
+
+ul.search-input-matching li span:nth-of-type(3) {
+    color: #808080;
+}
+
+ul.search-input-matching li span {
+    color: #a9a9a9;
+}
+
+ul.search-input-matching li span:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.search-input-warning {
+    border: 1px solid #FF5722 !important;
+}
+
+.search-input-message {
+    position: absolute;
+    display: none;
+}
+.search-input-message>div {
+    bottom: -5px;
+    z-index: 999999;
+}
+.search-input-message>div>p {
+    padding: 3px 5px;
+    border: 1px solid #FF5722;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #B0B0B0;
+    margin-bottom: 0;
+    background: #fff;
+}
+.search-input-message>div>span{
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 45%;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #FF5722;
+    z-index: 999999;
+}
+
+ul.search-input-matching.blue {
+    border: 1px solid #3DABFF;
+}
+
+ul.search-input-matching.blue li:hover {
+    background: #6acbff;
+}
+
+ul.search-input-matching.blue li.selected {
+    background: #3DABFF;
+}
+
+ul.search-input-matching.blue li:hover span,
+ul.search-input-matching.blue li.selected span {
+    color: #fffffF;
+}
+
+ul.search-input-matching.green {
+    border: 1px solid #45b242;
+}
+
+ul.search-input-matching.green li:hover {
+    background: #8bcd81;
+}
+
+ul.search-input-matching.green li.selected {
+    background: #45b242;
+}
+
+ul.search-input-matching.green li:hover span,
+ul.search-input-matching.green li.selected span {
+    color: #fffffF;
+}
